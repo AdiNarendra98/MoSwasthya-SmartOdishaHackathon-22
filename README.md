@@ -1,4 +1,4 @@
-# Mo Swasthya Submission for Smart Odisha Hackathon
+# MoSwasthya- Submission forSmart Odisha Hackathon
 
 In our proposed solution, you can find the nearest health care services for Heart related issues. We are also predicting the probability of the user having heart diseases by analyzing different parameters given by the user.
 
