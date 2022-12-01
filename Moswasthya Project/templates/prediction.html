@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MoSwasthya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css?ver=1.0" rel="stylesheet">
+    <style>
+        #more {
+            display: none;
+        }
+
+        .form1 {
+            border: 1px solid gray;
+            padding: 10px;
+
+            background-color: #EFF5F9
+        }
+
+        .formcon {
+            background-color: rgb(206, 224, 234);
+            padding: 20px;
+        }
+        .popupk {
+            display: none;
+            position: fixed;
+            padding: 10px;
+            width: 280px;
+            left: 50%;
+            margin-left: -150px;
+            height: 180px;
+            top: 50%;
+            margin-top: -100px;
+            background: #FFF;
+            border: 1px solid gray;
+            border-radius: 5px;
+            z-index: 20;
+        }
+
+        #popupk:after {
+            position: fixed;
+            content: "";
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -2;
+        }
+
+        #popupk:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #FFF;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-decoration-none text-body pe-3" href=""><i
+                            class="bi bi-telephone me-2"></i>(0674)2390674</a>
+                    <span class="text-body">|</span>
+                    <a class="text-decoration-none text-body px-3" href=""><i
+                            class="bi bi-envelope me-2"></i>orhealth@nic.in</a>
+                        <!-- <label class="toggle">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <span class="labels" data-on="ଓଡ଼ିଆ" data-off="Eng"></span>
+                        </label> -->
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <div class="toogle">
+                            <a href="/" id ="b1"type="button">Eng</a>
+                            <a href="/landingodia" id="b2" type="button">ଓଡ଼ିଆ</a>
+                        </div>
+                        <!-- <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="/" class="navbar-brand">
+                    <h1 class="m-0  text-primary"><i class="fa fa-clinic-medical me-2"></i>MoSwasthya</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="/" class="nav-item nav-link ">Home</a>
+                        <a href="/scheme" class="nav-item nav-link">Public Scheme</a>
+                        <a href="/prediction" class="nav-item nav-link">FAPS</a>
+                        <a href="/tableu" class="nav-item nav-link">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- <div class="container py-5"> -->
+
+
+
+    <!-- Prediction Form Template -->
+    <br>
+    <!-- <div class="formcon" >
+        <div class="text-center mx-auto mb-5 predtitle">
+            <div class="mb-4">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">FAPS</h5>
+                <h1 class="display-4">First Action Prediction System</h1>
+            </div>
+          <h4 style="color: red;"><b>{{out}}</b> </h4> -->
+
+          <div class="row gx-5 formcon predform">
+            <div class="text-center mx-auto mb-5 predtitle">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">FAPS</h5>
+                    <h1 class="display-4">First Action Prediction System</h1>
+                </div>
+            </div>
+
+            <h4 style="color: red;"><b>{{out}}</b> </h4>
+
+            <div class="  form1 formmain"
+                style="background-color:rgb(255, 255, 255); margin:10px 430px; max-width: 500px; text-align: justify; ">
+    <!-- <div class="form1" style="background-color:rgb(255, 255, 255); margin:0px 430px; text-align: justify; max-width: 500px; height:fit-content; align-items:center;justify-content:center;"> -->
+        <form method="post" action="/pred_disease" enctype="multipart/form-data"  name = "sub_form">
+            {% csrf_token %}
+            <p style="font-weight:bold">Body Mass Index (BMI) </p>
+                <input style="width: 100px;" type="" min="0" name="BMI" id="BMI"  required/>
+                <p style="margin-top: 30px; font-weight:bold">Have you smoked at least 100 cigarettes in your entire
+                    life? </p>
+
+                <input type="radio" name="Smoking" id="Smoking1" value= "1" />
+                <label for="Smoking1" >
+                    Yes
+                </label>
+
+
+                <input type="radio" name="Smoking" id="Smoking1"  value= "0"  required />
+                <label for="Smoking1" >
+                    No
+                </label>
+
+                <p style="margin-top: 30px; font-weight:bold">Heavy drinkers (adult men having more than 14 drinks
+                    per week and adult women
+                    having more
+                    than 7 drinks per week)?</p>
+
+                <input type="radio" name="Alcohol_Drinking" id="AlcoholDrinking1"  value="1" required/>
+                <label for="AlcoholDrinking1" >
+                    Yes
+                </label>
+
+
+                <input type="radio" name="Alcohol_Drinking" id="AlcoholDrinking1"  value="0" required />
+                <label for="AlcoholDrinking1" >
+                    No
+                </label>
+
+                <p style="margin-top: 30px; font-weight:bold">(Ever told) (you had) a stroke? </p>
+
+                <input  type="radio" name="Stroke" id="Stroke1"  value= "1" required />
+                <label  for="Stroke1" >
+                    Yes
+                </label>
+
+
+                <input type="radio" name="Stroke" id="Stroke1" value= "0"/>
+                <label for="Stroke1" >
+                    No
+                </label>
+                <p style="margin-top: 30px; font-weight:bold">Now thinking about your physical health, which includes
+                    physical illness and
+                    injury, for
+                    how many days during the past 30 days was your physical health not good? (0-30 days). </p>
+                <input style="width: 100px;" type="number" min="0" max="30" name="Physical_Health"
+                    id="Physical Health" required/>
+                <p style="margin-top: 30px; font-weight:bold">Thinking about your mental health, for how many days
+                    during the past 30 days
+                    was your
+                    mental health not good?</p>
+                <input style="width: 100px;" type="number" min="0" max="30" name="Mental_Health" id="Mental Health" required/>
+                <p style="margin-top: 30px; font-weight:bold">Do you have serious difficulty walking or climbing
+                    stairs? </p>
+
+                <input type="radio" name="DiffWalking" id="DiffWalking1" value= "1" required />
+                <label for="DiffWalking1" >
+                    Yes
+                </label>
+
+
+                <input type="radio" name="DiffWalking" id="DiffWalking2" value="0"/>
+                <label for="DiffWalking2" >
+                    No
+                </label>
+
+                <p style="margin-top: 30px; font-weight:bold">Are you male or female? </p>
+
+                <input type="radio" name="Sex" id="Sex1" value= "1" required />
+                <label  for="Sex1">
+                    Male
+                </label>
+
+
+                <input type="radio" name="Sex" id="Sex1" value="0"  />
+                <label  for="Sex1">
+                    Female
+                </label>
+
+
+                <p style="margin-top: 30px; font-weight:bold">Age Group </p>
+                <select name="AgeCategory" id="AgeCategory" style="height: 35px;">
+                    <option selected>Select Age</option>
+                    <option value="0"> 18-24</option>
+                    <option value="1">25-29</option>
+                    <option value="2">30-34</option>
+                    <option value="3">35-39</option>
+                    <option value="4">40-44</option>
+                    <option value="5">45-49</option>
+                    <option value="6">50-54</option>
+                    <option value="7">55-59</option>
+                    <option value="8">60-64</option>
+                    <option value="9">65-69</option>
+                    <option value="10">70-74</option>
+                    <option value="11">75-79</option>
+                    <option value="12">80 or older</option>
+                </select>
+                <br />
+                <!-- <p  style="margin-top: 30px; font-weight:bold;">Imputed race/ethnicity value.</p>
+                <div>
+                    <select name="Race" id="Race" style="height: 35px; width: 150px; border:1px solid grey;">
+                        <option selected>Select Race/Ethnicity</option>
+                        <option value="0"> American Indian/Alaskan Native</option>
+                        <option value="1"> Asian</option>
+                        <option value="2">Black</option>
+                        <option value="3">Hispanic</option>
+                        <option value="4">Other</option>
+                        <option value="5">White</option>
+                    </select>
+                </div> -->
+
+                <p style="margin-top: 30px; font-weight:bold">What is your average resting blood pressure level?</p>
+                <div>
+                    <select name="Diabetic" id="Diabetic" style="height: 35px; width: 150px;">
+                        <!-- <option selected>Diabetic</option> -->
+                        <option value=0>80-110</option>
+                        <option value=1>111-140</option>
+                        <option value=2>141-170</option>
+                        <option value=3>171-200</option>
+                    </select>
+                </div>
+
+                <p style="margin-top: 30px; font-weight:bold">What is your average fasting blood sugar(FBS) level ?</p>
+
+                    <input type="radio" name="PhysicalActivity" id="PhyActy1" value="1" required />
+                    <label  for="PhyActy1">
+                        FBS>=120
+                    </label>
+    
+                    <input  type="radio" name="PhysicalActivity" id="PhyActy1" value="0" />
+                    <label   for="PhyActy1">
+                        FBS<=120
+                    </label>
+
+               
+                <p style="margin-top: 30px; font-weight:bold">Would you say that in general your health is...</p>
+
+                <!-- <input type="radio" name="GenHealth" id="GenHealth1" value="1" required />
+                <label  for="GenHealth1">
+                    Yes
+                </label>
+
+                <input  type="radio" name="GenHealth" id="GenHealth1"  value="0" />
+                <label  for="GenHealth1">
+                    No
+                </label> -->
+                <div>
+                    <select name="GenHealth" id="GenHealth" style="height: 35px; width: 150px;">
+                           <option selected>Select Category</option>
+                           <option value="0">Poor</option>
+                           <option value="1">Fair</option>
+                           <option value="2">Good</option>
+                           <option value="3">Very Good</option>
+                           <option value="4">Excelllent</option>
+                     </select>
+                </div>
+
+
+                <p style="margin-top: 30px; font-weight:bold"> On average, how many hours of sleep do you get in a
+                    24-hour period?</p>
+                <input style="width: 100px; border: bottom 1px;" type="number" min="0" max="24" name="SleepTime"
+                    id="SleepTime" required />
+
+                <p style="margin-top: 30px; font-weight:bold">(Ever told) (you had) asthma?</p>
+
+                <input type="radio" name="Asthma" id="Asthma1" value= "1"  required/>
+                <label for="Asthma1">
+                    Yes
+                </label>
+
+                <input type="radio" name="Asthma" id="Asthma1" value= "0" />
+                <label  for="Asthma1">
+                    No
+                </label>
+
+
+                <p style="margin-top: 30px; font-weight:bold">Not including kidney stones, bladder infection or
+                    incontinence, were you ever
+                    told you had kidney disease?</p>
+
+                <input type="radio" name="KidneyDisease" id="KidneyDisease1"  value="1" required />
+                <label  for="KidneyDisease1">
+                    Yes
+                </label>
+
+                <input type="radio" name="KidneyDisease" id="KidneyDisease1"   value= "0"/>
+                <label for="KidneyDisease1">
+                    No
+                </label>
+
+
+                <p style="margin-top: 30px; font-weight:bold">(Ever told) (you had) skin cancer?</p>
+
+                <input type="radio" name="SkinCancer" id="SkinCancer1" value= "1"  required/>
+                <label for="SkinCancer1">
+                    Yes
+                </label>
+
+                <input type="radio" name="SkinCancer" id="SkinCancer1" value= "0" />
+                <label for="SkinCancer1">
+                    No
+                </label>
+
+                <div>
+                    <button
+                        style="height:50px; width:100px; margin-top:10px; border:none; background-color:#13C5DD; color:azure; border-radius:5px;"
+                        type="submit" >Predict
+                    </button>
+                    <div class="popupk" id="popupk">
+                        <!-- <p>{{out}}</p> -->
+                        
+                        <a href="#" onclick="hide('popupk')">Close</a>
+                    </div>
+                </div>
+
+        </form>
+        
+       
+    </div>
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+
+
+        }
+
+
+        $ = function (id) {
+            return document.getElementById(id);
+        }
+
+        var show = function (id) {
+            $(id).style.display = 'block';
+        }
+        var hide = function (id) {
+            $(id).style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

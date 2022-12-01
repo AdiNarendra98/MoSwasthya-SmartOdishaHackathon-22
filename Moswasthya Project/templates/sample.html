@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<center>
+
+  <h4>Prediction of the Data</h4>
+
+  <form action="">
+    <p >Body Mass Index (BMI) </p>
+    <input style="width: 100px;" type="number"  name="BMI" id="BMI" />
+    <p  style="margin-top: 30px;">Have you smoked at least 100 cigarettes in your entire
+      life? </p>
+    <div class="form-check mb-2">
+      <input  type="radio" name="Smoking" id="Smoking1" />
+      <label  for="Smoking1" value="1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="Smoking" id="Smoking2" />
+      <label  for="Smoking2" value="0">
+        No
+      </label>
+    </div>
+    <p  style="margin-top: 30px;">Heavy drinkers (adult men having more than 14 drinks
+      per week and adult women
+      having more
+      than 7 drinks per week)?</p>
+    <div >
+      <input type="radio" name="Alcohol Drinking" id="AlcoholDrinking1" />
+      <label  for="AlcoholDrinking1" value="1">
+        Yes
+      </label>
+    </div>
+    <div>
+      <input  type="radio" name="Alcohol Drinking" id="AlcoholDrinking2" />
+      <label  for="AlcoholDrinking2" value="0">
+        No
+      </label>
+    </div>
+    <p  style="margin-top: 30px;">(Ever told) (you had) a stroke? </p>
+    <div >
+      <input  type="radio" name="Stroke" id="Stroke1" />
+      <label  for="Stroke1" value="1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="Stroke" id="Stroke2" />
+      <label  for="Stroke2" value="0">
+        No
+      </label>
+    </div>
+    <p  style="margin-top: 30px;">Now thinking about your physical health, which includes
+      physical illness and
+      injury, for
+      how many days during the past 30 days was your physical health not good? (0-30 days). </p>
+    <input style="width: 100px;"  type="number" min="0" max="30"
+      name="Physical Health" id="Physical Health" />
+    <p  style="margin-top: 30px;">Thinking about your mental health, for how many days
+      during the past 30 days
+      was your
+      mental health not good?</p>
+    <input style="width: 100px;"  type="number" min="0" max="30"
+      name="Mental Health" id="Mental Health" />
+    <p  style="margin-top: 30px;">Do you have serious difficulty walking or climbing
+      stairs? </p>
+    <div >
+      <input  type="radio" name="DiffWalking" id="DiffWalking1" />
+      <label  for="DiffWalking1" value="1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="DiffWalking" id="DiffWalking2" />
+      <label  for="DiffWalking2" value="0">
+        No
+      </label>
+    </div>
+    <p  style="margin-top: 30px;">Are you male or female? </p>
+    <div >
+      <input  type="radio" name="Sex" id="Sex1" />
+      <label value="1"  for="Sex1">
+        Male
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="Sex" id="Sex2" />
+      <label value="0"  for="Sex2">
+        Female
+      </label>
+    </div>
+    <div >
+      <p  style="margin-top: 30px;">Age Group </p>
+      <select id="AgeCategory"  style="height: 35px;">
+        <option selected>Select Age</option>
+        <option value="0"> 18-24</option>
+        <option value="1">25-29</option>
+        <option value="2">30-34</option>
+        <option value="3">35-39</option>
+        <option value="4">40-44</option>
+        <option value="5">45-49</option>
+        <option value="6">50-54</option>
+        <option value="7">55-59</option>
+        <option value="8">60-64</option>
+        <option value="9">65-69</option>
+        <option value="10">70-74</option>
+        <option value="11">75-79</option>
+        <option value="12">80 or older</option>
+      </select>
+    </div><br />
+    <p  >Imputed race/ethnicity value.</p>
+    <div >
+      <select id="Race"  >
+        <option selected>Select Race/Ethnicity</option>
+        <option value="0"> American Indian/Alaskan Native</option>
+        <option value="1"> Asian</option>
+        <option value="2">Black</option>
+        <option value="3">Hispanic</option>
+        <option value="4">Other</option>
+        <option value="5">White</option>
+      </select>
+    </div>
+
+    <p  >(Ever told) (you had) diabetes?</p>
+    <div >
+      <select id="Diabetic"  >
+        <option selected>Diabetic</option>
+        <option value="0">No</option>
+        <option value="1">No, borderline diabetes</option>
+        <option value="2">Yes</option>
+        <option value="3">Yes (during pregnancy)</option>
+      </select>
+    </div>
+
+    <p >Are you an adult doing physical activity or exercise
+      during the past 30 days
+      other than
+      your regular job?</p>
+    <div >
+      <input  type="radio" name="Physical Activity" id="PhysicalActivity1" />
+      <label value="1"  for="PhysicalActivity1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="PhysicalActivity" id="PhysicalActivity2" />
+      <label value="0"  for="PhysicalActivity2">
+        No
+      </label>
+    </div>
+
+    <p  >Would you say that in general your health is...</p>
+    <div >
+      <input  type="radio" name="GenHealth" id="GenHealth1" />
+      <label value="1"  for="GenHealth1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="GenHealth" id="GenHealth2" />
+      <label value="0"  for="GenHealth2">
+        No
+      </label>
+    </div>
+
+    <p  > On average, how many hours of sleep do you get in a
+      24-hour period?</p>
+    <input style="width: 100px;"  type="number" min="0" max="24" name="SleepTime"
+      id="SleepTime" />
+
+    <p  >(Ever told) (you had) asthma?</p>
+    <div >
+      <input type="radio" name="Asthma" id="Asthma1" />
+      <label value="1" for="Asthma1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input type="radio" name="Asthma" id="Asthma2" />
+      <label value="0"  for="Asthma2">
+        No
+      </label>
+    </div>
+
+    <p  >Not including kidney stones, bladder infection or
+      incontinence, were you ever
+      told you had kidney disease?</p>
+    <div >
+      <input  type="radio" name="KidneyDisease" id="KidneyDisease1" />
+      <label value="1"  for="KidneyDisease1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="KidneyDisease" id="KidneyDisease2" />
+      <label value="0"  for="KidneyDisease2">
+        No
+      </label>
+    </div>
+
+    <p  style="margin-top: 30px;">(Ever told) (you had) skin cancer?</p>
+    <div >
+      <input  type="radio" name="SkinCancer" id="SkinCancer1" />
+      <label value="1"  for="SkinCancer1">
+        Yes
+      </label>
+    </div>
+    <div >
+      <input  type="radio" name="SkinCancer" id="SkinCancer2" />
+      <label value="0" class="form-check-label" >
+        No
+      </label>
+    </div>
+
+  </form>
+  <div >
+    <button style="height:50px; width:100px;" type="submit" class="btn btn-primary">Predict</button>
+  </div>
+
+
+</center>
+
+</html>

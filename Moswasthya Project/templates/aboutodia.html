@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ମୋସ୍ୱାସ୍ଥ୍ୟ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- jquery Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<style>
+     
+    .team-item {
+        max-width: 350px;
+    
+    }
+    .doc-card-body {
+        margin: 0px 50px 0px 50px;
+    
+    }
+    .Available_Day,
+    .Time {
+        font-size: 20px;
+    }
+    .doc-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        overflow-y: scroll;
+        max-height: 500px;
+    }
+    </style>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-decoration-none text-body pe-3" href=""><i
+                            class="bi bi-telephone me-2"></i>(0674)2390674</a>
+                    <span class="text-body">|</span>
+                    <a class="text-decoration-none text-body px-3" href=""><i
+                            class="bi bi-envelope me-2"></i>orhealth@nic.in</a>
+                        <!-- <label class="toggle">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <span class="labels" data-on="ଓଡ଼ିଆ" data-off="Eng"></span>
+                        </label> -->
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <div class="toogle">
+                            <a href="/" id ="b1"type="button">Eng</a>
+                            <a href="/landingodia" id="b2" type="button">ଓଡ଼ିଆ</a>
+                        </div>
+                        <!-- <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="/landingodia" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><i class="fa fa-clinic-medical me-2"></i>ମୋସ୍ୱାସ୍ଥ୍ୟ</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="/landingodia" class="nav-item nav-link">ମୂଳପୃଷ୍ଠା</a>
+                        <a href="#overview" class="nav-item nav-link">ସମୀକ୍ଷା</a>
+                        <a href="#appointment" class="nav-item nav-link">ନିଯୁକ୍ତି</a>
+
+                        <a href="/schemeodia" class="nav-item nav-link">ଜନସାଧାରଣ ଯୋଜନା</a>
+                        <a href="/predictionodia" class="nav-item nav-link">ମେସିନ୍ ଲର୍ନିଂ ପୂର୍ବାନୁମାନ</a>
+                        <a href="/tableuodia" class="nav-item nav-link">ଡ୍ୟାସବୋର୍ଡ</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    {% for hospital in setshospitallist %}
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <center>
+                    <div class="col-lg-7">
+                        <div class="mb-4">
+                            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">ହସ୍ପିଟାଲ
+                                ବିଷୟରେ
+                            </h5>
+                            <h1 class="display-4">{{hospital.hospital_name}}</h1>
+
+                            <img class="rounded hospimage" src="/show/{{ hospital.logo }}">
+                        </div>
+
+                        <div class="row g-3 pt-3">
+                            <div class="col-sm-3 col-6">
+                                <div class="bg-light text-center rounded-circle py-4">
+                                    <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                                    <h6 class="mb-0">ଯୋଗ୍ୟ<small class="d-block text-primary">ଡାକ୍ତରମାନେ</small></h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <div class="bg-light text-center rounded-circle py-4">
+                                    <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                                    <h6 class="mb-0">ଜରୁରୀକାଳୀନ ପରିସ୍ଥିତି<small
+                                            class="d-block text-primary">ସେବାଗୁଡିକ</small></h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <div class="bg-light text-center rounded-circle py-4">
+                                    <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                                    <h6 class="mb-0">ସଠିକ୍<small class="d-block text-primary">ପରୀକ୍ଷା</small></h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <div class="bg-light text-center rounded-circle py-4">
+                                    <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                                    <h6 class="mb-0">ମାଗଣା<small class="d-block text-primary">ଆମ୍ବୁଲାନ୍ସ</small></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Hospital Details Tabs Start-->
+    <section id="overview">
+        <div class="tabs">
+            <ul class="tabs-list">
+                <li class="active"><a href="#tab1"><span class="icon"><i class="fa fa-tasks"
+                                aria-hidden="true"></i></span>ପୂର୍ବାବଲୋକନ</a></li>
+                <li><a href="#tab2"><span class="icon"><i class="fa fa-user-md"
+                                aria-hidden="true"></i></span>ବିଭାଗଗୁଡିକ</a></li>
+                <li><a href="#tab3"><span class="icon"><i class="fa fa-universal-access"
+                                aria-hidden="true"></i></span>ଫ୍ୟାସିଲିଟିସ୍</a></li>
+                <li><a href="#tab4"><span class="icon"><i class="fas fa-image"
+                                aria-hidden="true"></i></span>ଗ୍ୟାଲେରୀ</a>
+                </li>
+                <li><a href="#tab5"><span class="icon"><i class="fas fa-stethoscope"
+                                aria-hidden="true"></i></span>ଡାକ୍ତର</a>
+                </li>
+            </ul>
+            <div id="tab1" class="tab active">
+                <div class="tabs_info">
+                    <h3>ପୂର୍ବାବଲୋକନ</h3>
+                    <p> {{hospital.about}}</p>
+                    <div class="hospital_summary">
+                        <h3>ଆମ ପାଖରେ ପହଞ୍ଚନ୍ତୁ </h3>
+                        <br>
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination={{hospital.address}}"
+                                style="text-decoration: none;">
+                                {{hospital.address}}</a>
+                        </li>
+                        <br>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="tel:6742545575" style="text-decoration: none;">{{hospital.contact_number}}</a>
+                        </li>
+                        <br>
+                        <li>
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            <a href="mailto:{{hospital.hospital_email}}"
+                                style="text-decoration: none;">{{hospital.hospital_email}}</a>
+                        </li>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab">
+                <div class="tabs_info">
+                    <h3>ବିଭାଗଗୁଡିକ</h3>
+                    <div class="cards">
+                        {% for department in hospital.department %}
+                        <div class="card">
+                            <div class="dep-item"><img src="/static/img/Group111.svg" alt="" class="depimg"><span
+                                class="depname">{{department}}</span></div>
+                        </div>
+                        {% endfor %}
+                        <!-- <div class="card">
+                            <div class="dep-item"><img src="img\Group111.svg" alt="" class="depimg"><span
+                                    class="depname">ହୃଦରୋଗ</span></div>
+                        </div>
+                        <div class="card">
+                            <div class="dep-item"><img src="img\Group111.svg" alt="" class="depimg"><span
+                                    class="depname">ହୃଦରୋଗ</span></div>
+                        </div>
+                        <div class="card">
+                            <div class="dep-item"><img src="img\Group111.svg" alt="" class="depimg"><span
+                                    class="depname">ହୃଦରୋଗ</span></div>
+                        </div>
+                        <div class="card">
+                            <div class="dep-item"><img src="img\Group111.svg" alt="" class="depimg"><span
+                                    class="depname">ହୃଦରୋଗ</span></div>
+                        </div>
+                        <div class="card">
+                            <div class="dep-item"><img src="img\Group111.svg" alt="" class="depimg"><span
+                                    class="depname">ହୃଦରୋଗ</span></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tab">
+                <div class="tabs_info">
+                    <h3>ଫ୍ୟାସିଲିଟିସ୍</h3>
+                    <div class="cards">
+                        {% if facilities is iterable %}
+                        {% for facilty in hospital.facilities %}
+                        <div class="card">
+                            <div class="fac">
+                                <img class="fac-img1" src="/static/img/clear.svg" alt="" class="src">
+                                <h1 class="fac-cardtitle">{{facilty.heading}}</h1>
+                                <p class="factext">{{facilty.content}}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="card">
+                            <div class="fac">
+                                <img class="fac-img1" src="/static/img/clear.svg" alt="" class="src">
+                                <!-- <h1 class="fac-cardtitle">{{facilty.heading}}</h1> -->
+                                <p class="factext">{{hospital.facilities}}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <!-- <div class="card">
+                            <div class="fac">
+                                <img class="fac-img3" src="img\Group111.svg" alt="" class="src">
+                                <h1 class="fac-cardtitle">OPD ସେବାଗୁଡିକ </h1>
+                                <p class="factext">ସମସ୍ତ ରକ୍ତ ପ୍ରକାର ଉପଲବ୍ଧ |
+                                    24x7 ରକ୍ତ ଦାନ ସେବା |
+                                    ପ୍ରତିରୋପଣ ପାଇଁ ଅଙ୍ଗ ସଂରକ୍ଷଣ |
+                                    ଶୀଘ୍ର ଏବଂ ସହଜ କ୍ରୟ |
+                                    24x7 ଫାର୍ମାସି ସେବା |</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card">
+                            <div class="fac">
+                                <img class="fac-img4" src="img\service.png" alt="" class="src">
+                                <h1 class="fac-cardtitle">24/7 ସେବା </h1>
+                                <p class="factext">24 ଘଣ୍ଟା CCTV ତଦାରଖ |
+                                    24/7 ସେବାଗୁଡିକ |
+                                    24/7 ନର୍ସିଂ ସେବା |
+                                    ଇନଡୋର ଫାର୍ମାସି |
+                                    24x7 ରକ୍ତ ଦାନ ସେବା |</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card">
+                            <div class="fac">
+                                <img class="fac-img5" src="img\bloodbank.svg" alt="" class="src">
+                                <h1 class="fac-cardtitle">ବ୍ଲଡ ବ୍ୟାଙ୍କ</h1>
+                                <p class="factext">ସମସ୍ତ ରକ୍ତ ପ୍ରକାର ଉପଲବ୍ଧ |
+                                    24x7 ରକ୍ତ ଦାନ ସେବା |
+                                    ପ୍ରତିରୋପଣ ପାଇଁ ଅଙ୍ଗ ସଂରକ୍ଷଣ |</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card">
+                            <div class="fac">
+                                <img class="fac-img6" src="img\bed.png" alt="" class="src">
+                                <h1 class="fac-cardtitle">40+ ଶଯ୍ୟା</h1>
+                                <p class="factext">ସାଧାରଣ ୱାର୍ଡ ବେଡ୍ - ଦିନକୁ 500 ଟଙ୍କା |
+                                    ICU ଶଯ୍ୟା - RS 1000 / ଦିନ |
+                                    ସମସ୍ତ ରକ୍ତ ପ୍ରକାର ଉପଲବ୍ଧ |
+                                    24x7 ରକ୍ତ ଦାନ ସେବା |
+                                    ପ୍ରତିରୋପଣ ପାଇଁ ଅଙ୍ଗ ସଂରକ୍ଷଣ |</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="tab">
+                <div class="tabs_info">
+                    <h3>ଗ୍ୟାଲେରୀ</h3>
+                    <div class="gallery">
+                        {% if images is iterable %}
+                        {% for image in hospital.images %}
+                        <img src="/show/{{ image }}" class="gallery__image">
+                        {% endfor %}
+                        {% else %}
+                        <img src="/show/{{ hospital.images }}" class="gallery__image">
+                        {% endif %}
+                        <!-- <img src="img\JH2.jpg" class="gallery__image">
+                        <img src="img\JH3.jpg" class="gallery__image">
+                        <img src="img\JH4.png" class="gallery__image">
+                        <img src="img\JAGANNATH_HOSPITAL_0.jpg" class="gallery__image">
+                        <img src="img\JH1.jpg" class="gallery__image">
+                        <img src="img\JH12.jpg" class="gallery__image">
+                        <img src="img\JH6.jpg" class="gallery__image">
+                        <img src="img\JH7.png" class="gallery__image">
+                        <img src="img\JH8.png" class="gallery__image">
+                        <img src="img\JH9.png" class="gallery__image">
+                        <img src="img\JH10.png" class="gallery__image">
+                        <img src="img\JH11.png" class="gallery__image"> -->
+                    </div>
+                </div>
+            </div>
+            <div id="tab5" class="tab tab5">
+                <div class="tabs_info">
+                    <h3>ଆମର ଡାକ୍ତରମାନେ</h3>
+                    <div class="doc-cards">
+                        {% for doctor in hospital.Doctors %}
+                        <div class="team-item">
+                            <div class="row g-0 bg-light rounded overflow-hidden">
+                                <div class="col-12 col-sm-7 h-100 d-flex flex-column doc-card-body">
+                                    <div class="mt-auto p-4">
+                                        <h3 class="Doctor_Name">{{doctor.Name}}</h3>
+                                        <h6 class="fw-normal fst-italic text-primary mb-4 specialization">ହୃଦରୋଗ ବିଶେଷଜ୍ଞ </h6>
+                                        <h4><u> Available Day: -</u></h4>
+                                        {% for day in doctor.Available_Day %}
+                                        <p style="display:inline" class="Available_Day">{{day}}</p>
+                                        {% endfor %}
+                                        <h4><u>Availability Time: -</u></h4>
+                                        <p class="Time">{{doctor.Time}}</p>
+                                        <!-- <p class="Available_Day">ସୋମ, ବୁଧ, ଶୁକ୍ର</p>
+                                        <p class="Time">8:30am-1:00pm</p> -->
+                                    </div>
+                                    <div class="d-flex mt-auto border-top p-4">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="far fa-envelope"></i></a>
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="fas fa-phone-square-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <!-- <div class="team-item">
+                            <div class="row g-0 bg-light rounded overflow-hidden">
+                                <div class="col-12 col-sm-7 h-100 d-flex flex-column doc-card-body">
+                                    <div class="mt-auto p-4">
+                                        <h3 class="Doctor_Name">ରୁଷେକାନ୍ତ ମହାନ୍ତି</h3>
+                                        <h6 class="fw-normal fst-italic text-primary mb-4 specialization">ହୃଦରୋଗ ବିଶେଷଜ୍ଞ </h6>
+                                        <p class="Available_Day">ସୋମ, ବୁଧ, ଶୁକ୍ର</p>
+                                        <p class="Time">8:30am-1:00pm</p>
+                                    </div>
+                                    <div class="d-flex mt-auto border-top p-4">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="far fa-envelope"></i></a>
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="fas fa-phone-square-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="row g-0 bg-light rounded overflow-hidden">
+                                <div class="col-12 col-sm-7 h-100 d-flex flex-column doc-card-body">
+                                    <div class="mt-auto p-4">
+                                        <h3 class="Doctor_Name">ରୁଷେକାନ୍ତ ମହାନ୍ତି</h3>
+                                        <h6 class="fw-normal fst-italic text-primary mb-4 specialization">ହୃଦରୋଗ ବିଶେଷଜ୍ଞ </h6>
+                                        <p class="Available_Day">ସୋମ, ବୁଧ, ଶୁକ୍ର</p>
+                                        <p class="Time">8:30am-1:00pm</p>
+                                    </div>
+                                    <div class="d-flex mt-auto border-top p-4">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="far fa-envelope"></i></a>
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i
+                                                class="fas fa-phone-square-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".tabs-list li a").click(function (e) {
+                e.preventDefault();
+            });
+
+            $(".tabs-list li").click(function () {
+                var tabid = $(this).find("a").attr("href");
+                $(".tabs-list li,.tabs div.tab").removeClass("active");   // removing active class from tab
+
+                $(".tab").hide();   // hiding open tab
+                $(tabid).show();    // show tab
+                $(this).addClass("active"); //  adding active class to clicked tab
+
+            });
+
+        });
+    </script>
+    <!-- Hospital Details Tabs End-->
+
+
+    <!-- Appointment Start -->
+    <section id="appointment">
+        <div class="container-fluid bg-primary my-5 py-5">
+            <div class="container py-5">
+                <div class="row gx-5">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="mb-4">
+                            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">ନିଯୁକ୍ତି</h5>
+                            <h1 class="display-4">ତୁମ ପରିବାର ପାଇଁ ଏକ ନିଯୁକ୍ତି କର</h1>
+                        </div>
+                        <!-- <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p> -->
+                        <!-- <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="#overview">Find Doctor</a> -->
+                        <!-- <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-white text-center rounded p-5">
+                            <h1 class="mb-4">ଏକ ନିଯୁକ୍ତି ବୁକ୍ କରନ୍ତୁ </h1>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <select class="form-select bg-light border-0" style="height: 55px;">
+                                            <option selected>ବିଭାଗ ବାଛନ୍ତୁ </option>
+                                            <option value="1">ହୃଦରୋଗ</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <select class="form-select bg-light border-0" style="height: 55px;">
+                                            <option selected>ଡାକ୍ତର ଚୟନ କରନ୍ତୁ </option>
+                                            <option value="1">ଡାକ୍ତର 1</option>
+                                            <option value="2">ଡାକ୍ତର 2</option>
+                                            <option value="3">ଡାକ୍ତର 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control bg-light border-0"
+                                            placeholder="ତୁମର ନାମ" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="email" class="form-control bg-light border-0"
+                                            placeholder="ଆପଣଙ୍କ ଇ - ମେଲ" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="date" id="date" data-target-input="nearest">
+                                            <input type="text"
+                                                class="form-control bg-light border-0 datetimepicker-input"
+                                                placeholder="ତାରିଖ" data-target="#date" data-toggle="datetimepicker"
+                                                style="height: 55px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="time" id="time" data-target-input="nearest">
+                                            <input type="text"
+                                                class="form-control bg-light border-0 datetimepicker-input"
+                                                placeholder="ସମୟ" data-target="#time" data-toggle="datetimepicker"
+                                                style="height: 55px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">ଏକ ନିଯୁକ୍ତି କର </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
