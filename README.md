@@ -1,8 +1,9 @@
 # MoSwasthya- Submission forSmart Odisha Hackathon
 
-In our proposed solution, you can find the nearest health care services for Heart related issues. We are also predicting the probability of the user having heart diseases by analyzing different parameters given by the user.
+Key Features:
+1. 
 
-## **You can check out the sample Webapp** [here](https://apps.coeaibbsr.in/moswasthya) **.**
+## Link to Prototype Website [here](https://apps.coeaibbsr.in/moswasthya/landing/20.277532570798993,85.77753898574824#loadedP2A9BPEtlKAIpJ6V0owekvZjQIvnmW14WNrDHtTe9k0foiWgtwKNXuSvF5Bj9c8W) .
 
 - **Mo Swasthya Mobileapp folder**:  Contains the apk file of the mobile application. You can simply download and use the app in your android.
 
