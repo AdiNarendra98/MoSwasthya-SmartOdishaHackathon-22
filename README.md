@@ -1,4 +1,4 @@
-# MoSwasthya- Submission for Smart Odisha Hackathon 2022
+# MoSwasthya 
 
 ### Key Features:
 
