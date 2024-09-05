@@ -9,8 +9,7 @@
 5. **Dashboard for health data inputs both for medical and non medical datasets** using Boosting Algorithms.
 
 - ### [Google Drive for all Files](https://drive.google.com/drive/folders/18NMVTPr4yZU4CXC6b1da7-QpCACaFx8R?usp=sharing)
-## Link to Prototype Website [here](https://apps.coeaibbsr.in/moswasthya/landing/20.277532570798993,85.77753898574824#loadedP2A9BPEtlKAIpJ6V0owekvZjQIvnmW14WNrDHtTe9k0foiWgtwKNXuSvF5Bj9c8W) 
-
+## File Structure
 - **Mo Swasthya Mobileapp folder**:  Contains the APK file of the mobile application. You can simply download and use the app on your Android device.
 
 - **Mo Swasthya Webapp folder**: Contains all the required files of the Webapp. You can check the web-app at the provided link.
